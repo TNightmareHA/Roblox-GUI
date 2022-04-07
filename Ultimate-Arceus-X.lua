@@ -4,6 +4,8 @@ local w = library:CreateWindow("A") -- Creates the window
 
 local b = w:CreateFolder("B") -- Creates the folder(U will put here your buttons,etc)
 
+local numero = game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 16,17,18,19,20,21,22,23,24,25,26,27,28,29,30
+
 b:Label("TNightmareHA GUI",{
     TextSize = 25; -- Self Explaining
     TextColor = Color3.fromRGB(255,255,255); -- Self Explaining
@@ -25,7 +27,7 @@ b:Slider("Walkspeed",{
     max = 100;
     precise = true; -- max 2 decimals
 },function(value)
-    print(value)
+    do numero
 end)
 
 b:Dropdown("Dropdown",{"A","B","C"},true,function(mob) --true/false, replaces the current title "Dropdown" with the option that t
