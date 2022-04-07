@@ -14,7 +14,7 @@ b:Label("TNightmareHA GUI",{
 }) 
 
 b:Button("IY A^X",function()
-    loadstring(game:HttpGet("https://pastebin.com/raw/qLqkzqN8"))()
+    defaultsettings = { prefix = '!'; StayOpen = false; keepIY = true; logsEnabled = false; jLogsEnabled = false; aliases = {}; binds = {}; WayPoints = {}; PluginsTable = {}; } defaults = game:GetService("HttpService"):JSONEncode(defaultsettings) writefile("IY_FE.iy",defaults) loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
 end)
 
 b:Button("",function(bool)
@@ -27,7 +27,7 @@ b:Slider("Walkspeed",{
     max = 100;
     precise = true; -- max 2 decimals
 },function(value)
-    do numero
+    numero
 end)
 
 b:Dropdown("Dropdown",{"A","B","C"},true,function(mob) --true/false, replaces the current title "Dropdown" with the option that t
