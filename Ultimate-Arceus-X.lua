@@ -24,7 +24,7 @@ b:Slider("Walkspeed",{
     max = 100;
     precise = true; -- max 2 decimals
 },function(value)
-    do (value); game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 16,17,18,19,20,21,22,23,24,25,26,27,28,29,30
+    (value == game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 16,17,18,19,20,21,22,23,24,25,26,27,28,29,30)
 end)
 
 b:Dropdown("Dropdown",{"A","B","C"},true,function(mob) --true/false, replaces the current title "Dropdown" with the option that t
