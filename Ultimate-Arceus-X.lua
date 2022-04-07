@@ -13,13 +13,12 @@ b:Label("TNightmareHA GUI",{
     
 }) 
 
-b:Button("IY A^X",function()
+b:Button("Infinite Yield",function()
     defaultsettings = { prefix = '!'; StayOpen = false; keepIY = true; logsEnabled = false; jLogsEnabled = false; aliases = {}; binds = {}; WayPoints = {}; PluginsTable = {}; } defaults = game:GetService("HttpService"):JSONEncode(defaultsettings) writefile("IY_FE.iy",defaults) loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
 end)
 
-b:Button("",function(bool)
-    shared.toggle = bool
-    print(shared.toggle)
+b:Button("Fly",function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/PztijdCc"))()
 end)
 
 b:Slider("Walkspeed",{
@@ -47,22 +46,3 @@ b:Box("Box","number",function(value) -- "number" or "string"
 end)
 
 b:DestroyGui()
-
---[[
-How to refresh a dropdown:
-1)Create the dropdown and save it in a variable
-local yourvariable = b:Dropdown("Hi",yourtable,function(a)
-    print(a)
-end)
-2)Refresh it using the function
-yourvariable:Refresh(yourtable)
-How to refresh a label:
-1)Create your label and save it in a variable
-local yourvariable = b:Label("Pretty Useless NGL",{
-    TextSize = 25; -- Self Explaining
-    TextColor = Color3.fromRGB(255,255,255);
-    BgColor = Color3.fromRGB(69,69,69);
-})
-2)Refresh it using the function
-yourvariable:Refresh("Hello") It will only change the text ofc
-]]
