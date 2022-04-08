@@ -1,3 +1,9 @@
+local library = loadstring(game:HttpGet(('https://raw.githubusercontent.com/AikaV3rm/UiLib/master/Lib.lua')))()
+local w = library:CreateWindow("Обычный эксплойт")
+local Collide = w:CreateFolder("Гуманоидный подвиг")
+local Multiverse = w:CreateFolder("Игровой эксплойт GUI")
+local Edition = "Coming Soon"
+
 wait(2)
 game.StarterGui:SetCore("SendNotification",{
 Title = "Ultimate A^X GUI";
@@ -10,14 +16,6 @@ game.StarterGui:SetCore("SendNotification",{
 Text = "БОЛЬШОЕ СПАСИБО ЗА ПОДДЕРЖКУ МЕНЯ";
 Duration = 5;
 })
-
-local Edition = "Coming Soon"
-
-local library = loadstring(game:HttpGet(('https://raw.githubusercontent.com/AikaV3rm/UiLib/master/Lib.lua')))()
-
-local w = library:CreateWindow("Обычный эксплойт")
-local Collide = w:CreateFolder("Гуманоидный подвиг")
-local Multiverse = w:CreateFolder("Игровой эксплойт GUI")
 
 Collide:Label("Нормальный",{
     TextSize = 25;
