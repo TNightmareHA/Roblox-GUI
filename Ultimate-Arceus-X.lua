@@ -33,10 +33,10 @@ q:Button("Keyboard UI",function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/manimcool21/Keyboard-FE/main/Protected%20(3).lua"))()
 end)
 
-q:Slider("Walkspeed",{
+q:Slider("WalkSpeed",{
     min = 16;
     max = 100;
     precise = true;
 },function(value)
-    game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = tonumber(Slider)
+    game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = tonumber(Slider.value)
 end)
