@@ -1,9 +1,12 @@
+
+
 local library = loadstring(game:HttpGet(('https://raw.githubusercontent.com/AikaV3rm/UiLib/master/Lib.lua')))()
 
 local w = library:CreateWindow("Обычный эксплойт")
 local Collide = w:CreateFolder("Гуманоидный подвиг")
+local Multiverse = w:CreateFolder("Игровой эксплойт GUI")
 
-Collide:Label("",{
+Collide:Label("GUI",{
     TextSize = 25;
     TextColor = Color3.fromRGB(255,255,255);
     BgColor = Color3.fromRGB(69,69,69);
@@ -31,3 +34,6 @@ end)
 Collide:ColorPicker("ColorPicker",Color3.fromRGB(255,0,0),function(color)
     print(color.." <-- Thanks for using with Color")
 end)
+
+Multiverse:Button("Specter GUI",function()
+    loadstring(game:HttpGet("
