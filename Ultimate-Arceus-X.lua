@@ -1,4 +1,10 @@
-
+wait(1.5)
+game.StarterGui:SetCore("SendNotification", {
+Title = "Ultimate A^X GUI";
+Text = "";
+Icon = "rbxassetid://57254792"; -- the image if u want. 
+Duration = 10;
+})
 
 local library = loadstring(game:HttpGet(('https://raw.githubusercontent.com/AikaV3rm/UiLib/master/Lib.lua')))()
 
@@ -36,4 +42,5 @@ Collide:ColorPicker("ColorPicker",Color3.fromRGB(255,0,0),function(color)
 end)
 
 Multiverse:Button("Specter GUI",function()
-    loadstring(game:HttpGet("
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/DaC9489/DaHub/main/specter",true))()
+end)
