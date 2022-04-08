@@ -29,11 +29,13 @@ q:Slider("WalkSpeed",{
     game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = value
 end)
 
-q:Label("For Mobile Users, do not use the slider button, use *NumberValue* instead.",{
-    TextSize = 20;
-    TextColor = Color3.fromRGB(255,255,255);
-    BgColor = Color3.fromRGB(69,69,69);  
+q:Button("WS Info",function()
+    game.StarterGui:SetCore("SendNotification",{
+        Title = "WalkSpeed Information";
+        Text = "Please do not use the slider(If you're on Mobile). Use the *BoxValue* of the Slider";
+        Duration = 10;
 })
+end)
 
 q:Slider("JumpPower",{
     min = 50;
@@ -43,11 +45,13 @@ q:Slider("JumpPower",{
     game.Players.LocalPlayer.Character.Humanoid.JumpPower = value
 end)
 
-q:Label("For Mobile Users, do not use the slider button, use *NumberValue* instead.",{
-    TextSize = 20;
-    TextColor = Color3.fromRGB(255,255,255);
-    BgColor = Color3.fromRGB(69,69,69);  
+q:Button("JP Info",function()
+    game.StarterGui:SetCore("SendNotification",{
+    Title = "JP Info";
+    Text = "Please do not use the slider(If you're on Mobile). Use the *BoxValue* of the Slider";
+    Duration = 10;
 })
+end)
 
 q:Button("IY_FE",function()
     defaultsettings = { prefix = '!'; StayOpen = false; keepIY = true; logsEnabled = false; jLogsEnabled = false; aliases = {}; binds = {}; WayPoints = {}; PluginsTable = {}; } defaults = game:GetService("HttpService"):JSONEncode(defaultsettings) writefile("IY_FE.iy",defaults) loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
