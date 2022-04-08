@@ -4,7 +4,7 @@ local w = library:CreateWindow("Ordinary exploit")
 local GUI = w:CreateFolder("Destroy GUI")
 local q = w:CreateFolder("Гуманоидный эксплойт")
 local e = w:CreateFolder("Игровой эксплойт GUI")
-local r = w:CreateFolder("Coming Soon")
+local r = w:CreateFolder("ServerSide")
 
 game.StarterGui:SetCore("SendNotification",{
     Title = "TNightmareHA A^X";
@@ -18,7 +18,7 @@ GUI:DestroyGui()
 q:Label("Нормальный",{
     TextSize = 25;
     TextColor = Color3.fromRGB(255,255,255);
-    BgColor = Color3.fromRGB(69,69,69);  
+    BgColor = Color3.fromRGB(69,69,69);
 })
 
 q:Slider("WalkSpeed",{
@@ -32,7 +32,7 @@ end)
 q:Button("WS Info",function()
     game.StarterGui:SetCore("SendNotification",{
         Title = "WalkSpeed Information";
-        Text = "Please do not use the slider(If you're on Mobile). Use the *BoxValue* of the Slider";
+        Text = "Please do not use the slider(If you're on Mobile). Use the *BoxValue*";
         Duration = 10;
 })
 end)
@@ -48,10 +48,16 @@ end)
 q:Button("JP Info",function()
     game.StarterGui:SetCore("SendNotification",{
     Title = "JP Info";
-    Text = "Please do not use the slider(If you're on Mobile). Use the *BoxValue* of the Slider";
+    Text = "Please do not use the slider(If you're on Mobile). Use the *BoxValue*";
     Duration = 10;
 })
 end)
+
+q:Label("Обычный эксплойт GUI",{
+    TextSize = 25;
+    TextColor = Color3.fromRGB(255,255,255);
+    BgColor = Color3.fromRGB(69,69,69);
+})
 
 q:Button("IY_FE",function()
     defaultsettings = { prefix = '!'; StayOpen = false; keepIY = true; logsEnabled = false; jLogsEnabled = false; aliases = {}; binds = {}; WayPoints = {}; PluginsTable = {}; } defaults = game:GetService("HttpService"):JSONEncode(defaultsettings) writefile("IY_FE.iy",defaults) loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
@@ -80,7 +86,6 @@ e:Label("Внутриигровые скрипты",{
     TextSize = 25;
     TextColor = Color3.fromRGB(255,255,255);
     BgColor = Color3.fromRGB(69,69,69);
-    
 })
 
 e:Button("Ragdoll Engine",function()
@@ -110,6 +115,22 @@ e:Button("Lumber Tycoon 2",function()
     loadstring(game:HttpGet("https://pastebin.com/raw/qzsLHpF9"))()
 end)
 
-r:Button("None",function()
+r:Label("Scan Game",{
+    TextSize = 25;
+    TextColor = Color3.fromRGB(255,255,255);
+    BgColor = Color3.fromRGB(69,69,69);
+})
+
+r:Button("Detect SS",function()
     print("CONGRATS")
+end)
+
+r:Label("Require Скрипты",{
+    TextSize = 25;
+    TextColor = Color3.fromRGB(255,255,255);
+    BgColor = Color3.fromRGB(69,69,69);
+})
+
+r:Button("Adrian Trolling GUI",function()
+    require()
 end)
