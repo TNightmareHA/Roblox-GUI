@@ -39,26 +39,3 @@ q:Slider("Walkspeed",{
 },function(value)
     game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = tonumber(q:Slider.flags.SPEED)
 end)
-
-e:Label("Игры",{
-    TextSize = 25;
-    TextColor = Color3.fromRGB(255,255,255);
-    BgColor = Color3.fromRGB(69,69,69);
-    
-})
-
-e:Button("Specter GUI",function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/DaC9489/DaHub/main/specter",true))()
-end)
-
-e:Button("Pet Simulator X",function()
-    game.StarterGui:SetCore("SendNotification",{
-    Title = "Alert";
-    Text = "Графического интерфейса пока нет...";
-    Duration = 5;
-})
-end)
-
-e:Button("Ragdoll Engine",function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/martinelcrac/cryptonichub/main/Ragdollengine.lua"))()
-end)
