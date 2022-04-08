@@ -132,5 +132,9 @@ r:Label("Require Скрипты",{
 })
 
 r:Button("Adrian Trolling GUI",function()
-    require()
+    os.execute('require(8801189907):adrian("PUT YOUR USERNAME")')
+    game.StarterGui:SetCore("SendNotification",{
+    Title = "ServerSide";
+    Text = "The require сценарий has been copied to clipboard";
+    Duration = 10;
 end)
