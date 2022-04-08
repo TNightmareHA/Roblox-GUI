@@ -11,9 +11,16 @@ GUI:DestroyGui()
 q:Label("Нормальный",{
     TextSize = 25;
     TextColor = Color3.fromRGB(255,255,255);
-    BgColor = Color3.fromRGB(69,69,69);
-    
+    BgColor = Color3.fromRGB(69,69,69);  
 })
+
+q:Slider("WalkSpeed",{
+    min = 16;
+    max = 100;
+    precise = true;
+},function(value)
+    game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = value
+end)
 
 q:Button("IY_FE",function()
     defaultsettings = { prefix = '!'; StayOpen = false; keepIY = true; logsEnabled = false; jLogsEnabled = false; aliases = {}; binds = {}; WayPoints = {}; PluginsTable = {}; } defaults = game:GetService("HttpService"):JSONEncode(defaultsettings) writefile("IY_FE.iy",defaults) loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
