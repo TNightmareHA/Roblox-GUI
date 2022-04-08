@@ -1,10 +1,17 @@
 local library = loadstring(game:HttpGet(('https://raw.githubusercontent.com/AikaV3rm/UiLib/master/Lib.lua')))()
 
-local w = library:CreateWindow("Обычный эксплойт")
+local w = library:CreateWindow("Ordinary exploit")
 local GUI = w:CreateFolder("Destroy GUI")
 local q = w:CreateFolder("Гуманоидный эксплойт")
 local e = w:CreateFolder("Игровой эксплойт GUI")
 local r = w:CreateFolder("Coming Soon")
+
+game.StarterGui:SetCore("SendNotification",{
+    Title = "TNightmareHA A^X";
+    Text = "Have a good time using my сценарий!";
+    Icon = "rbxassetid://9307520762";
+    Duration = 5;
+})
 
 GUI:DestroyGui()
 
@@ -22,6 +29,12 @@ q:Slider("WalkSpeed",{
     game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = value
 end)
 
+q:Label("For Mobile Users, do not use the slider button, use *NumberValue* instead.",{
+    TextSize = 20;
+    TextColor = Color3.fromRGB(255,255,255);
+    BgColor = Color3.fromRGB(69,69,69);  
+})
+
 q:Slider("JumpPower",{
     min = 50;
     max = 500;
@@ -29,6 +42,12 @@ q:Slider("JumpPower",{
 },function(value)
     game.Players.LocalPlayer.Character.Humanoid.JumpPower = value
 end)
+
+q:Label("For Mobile Users, do not use the slider button, use *NumberValue* instead.",{
+    TextSize = 20;
+    TextColor = Color3.fromRGB(255,255,255);
+    BgColor = Color3.fromRGB(69,69,69);  
+})
 
 q:Button("IY_FE",function()
     defaultsettings = { prefix = '!'; StayOpen = false; keepIY = true; logsEnabled = false; jLogsEnabled = false; aliases = {}; binds = {}; WayPoints = {}; PluginsTable = {}; } defaults = game:GetService("HttpService"):JSONEncode(defaultsettings) writefile("IY_FE.iy",defaults) loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
