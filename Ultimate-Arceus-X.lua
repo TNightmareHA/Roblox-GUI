@@ -34,9 +34,10 @@ q:Button("Keyboard UI",function()
 end)
 
 q:Slider("WalkSpeed",{
+    flag = "SPEED"
     min = 16;
     max = 100;
     precise = true;
 },function(value)
-    game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = tonumber(Slider.number)
+    game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = tonumber(Slider.flags.SPEED)
 end)
