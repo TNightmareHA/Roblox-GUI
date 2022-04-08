@@ -38,5 +38,5 @@ q:Slider("Walkspeed",{
     max = 100;
     precise = true;
 },function(value)
-    game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = tonumber()
+    game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = tonumber(Slider)
 end)
