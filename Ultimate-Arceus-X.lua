@@ -1,10 +1,8 @@
 local library = loadstring(game:HttpGet(('https://raw.githubusercontent.com/AikaV3rm/UiLib/master/Lib.lua')))()
 
 local w = library:CreateWindow("Обычный эксплойт")
-local Collide = w:CreateFolder("Гуманоидный подвиг")
-local Multiverse = w:CreateFolder("Игровой эксплойт GUI")
-
-local Edition = "Coming Soon"
+local mollide = w:CreateFolder("Гуманоидный подвиг")
+local multiverse = w:CreateFolder("Игровой эксплойт GUI")
 
 wait(2)
 game.StarterGui:SetCore("SendNotification",{
@@ -20,22 +18,22 @@ game.StarterGui:SetCore("SendNotification",{
     Duration = 5;
 })
 
-Collide:Label("Нормальный",{
+collide:Label("Нормальный",{
     TextSize = 25;
     TextColor = Color3.fromRGB(255,255,255);
     BgColor = Color3.fromRGB(69,69,69);
     
 })
 
-Collide:Button("IY_FE",function()
+collide:Button("IY_FE",function()
     defaultsettings = { prefix = '!'; StayOpen = false; keepIY = true; logsEnabled = false; jLogsEnabled = false; aliases = {}; binds = {}; WayPoints = {}; PluginsTable = {}; } defaults = game:GetService("HttpService"):JSONEncode(defaultsettings) writefile("IY_FE.iy",defaults) loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
 end)
 
-Collide:Button("Fly UI",function()
+collide:Button("Fly UI",function()
     loadstring(game:HttpGet("https://pastebin.com/raw/PztijdCc"))()
 end)
 
-Collide:Button("Keyboard UI",function()
+collide:Button("Keyboard UI",function()
     --This is only for Arceus X or whatever Mobile Android devices you're using.
     --Note: If you see or heard about iOS, well they might tricking you! Do not fall for their troll, there's nothing Exploit for iOS (iPhone/iPad) Devices!
 
@@ -46,7 +44,7 @@ Collide:Button("Keyboard UI",function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/manimcool21/Keyboard-FE/main/Protected%20(3).lua"))()
 end)
 
-Collide:Slider("Walkspeed",{
+collide:Slider("Walkspeed",{
     default = 16;
     min = 16;
     max = 100;
@@ -56,25 +54,30 @@ Collide:Slider("Walkspeed",{
     game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = tonumber(Collide:Slider.flags.SPEED)
 end)
 
-Collide:ColorPicker("ColorPicker",Color3.fromRGB(255,0,0),function(color)
+collide:ColorPicker("ColorPicker",Color3.fromRGB(255,0,0),function(color)
     print(color.." <-- Thanks for using with Color")
 end)
 
-Multiverse:Label("Игры",{
+multiverse:Label("Игры",{
     TextSize = 25;
     TextColor = Color3.fromRGB(255,255,255);
     BgColor = Color3.fromRGB(69,69,69);
     
 })
 
-Multiverse:Button("Specter GUI",function()
+multiverse:Button("Specter GUI",function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/DaC9489/DaHub/main/specter",true))()
 end)
 
-Multiverse:Button("Pet Simulator X",function()
-    print(Edition.." - Please wait for the updates!")
+multiverse:Button("Pet Simulator X",function()
+    print("- Please wait for the updates!")
+    game.StarterGui:SetCore("SendNotification",{
+    Title = "Alert";
+    Text = "Графического интерфейса пока нет...";
+    Duration = 5;
+})
 end)
 
-Multiverse:Button("Ragdoll Engine",function()
+multiverse:Button("Ragdoll Engine",function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/martinelcrac/cryptonichub/main/Ragdollengine.lua"))()
 end)
