@@ -15,6 +15,8 @@ game.StarterGui:SetCore("SendNotification",{
 
 GUI:DestroyGui()
 
+
+
 q:Label("Нормальный",{
     TextSize = 25;
     TextColor = Color3.fromRGB(255,255,255);
@@ -82,6 +84,8 @@ q:Button("Anti-Afk",function()
     loadstring(game:HttpGet("https://pastebin.com/raw/fiAZekfZ",true))()
 end)
 
+
+
 e:Label("Внутриигровые скрипты",{
     TextSize = 25;
     TextColor = Color3.fromRGB(255,255,255);
@@ -114,6 +118,8 @@ e:Button("Lumber Tycoon 2",function()
 })
     loadstring(game:HttpGet("https://pastebin.com/raw/qzsLHpF9"))()
 end)
+
+
 
 d:Label("Scan Game",{
     TextSize = 25;
