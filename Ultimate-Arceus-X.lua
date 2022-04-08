@@ -1,9 +1,27 @@
+while wait(1) do
+game.StarterGui:SetCore("SendNotification", {
+Title = "TNightmareHA A^X & TNNA";
+Text = "Thanks For Using my скрипт эксплойта";
+Icon = "rbxassetid://9307520762";
+Duration = 5;
+})
+end
+
+while wait(1) do
+game.StarterGui:SetCore("SendNotification", {
+Title = "Twisted Animatronics";
+Text = "Большое спасибо за использование моего GUI";
+Duration = 5;
+})
+end
+
 local library = loadstring(game:HttpGet(('https://raw.githubusercontent.com/AikaV3rm/UiLib/master/Lib.lua')))()
 
 local w = library:CreateWindow("Обычный эксплойт")
 local GUI = w:CreateFolder("Destroy GUI")
-local q = w:CreateFolder("Гуманоидный подвиг")
+local q = w:CreateFolder("Гуманоидный эксплойт")
 local e = w:CreateFolder("Игровой эксплойт GUI")
+local r = w:CreateFolder("Coming Soon")
 
 GUI:DestroyGui()
 
@@ -33,10 +51,27 @@ q:Button("Keyboard UI",function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/manimcool21/Keyboard-FE/main/Protected%20(3).lua"))()
 end)
 
-q:Slider("WalkSpeed",{
-    min = 16;
-    max = 100;
-    precise = true;
-},function(value)
-    game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = tonumber(Slider:value)
+e:Label("Внутриигровые скрипты",{
+    TextSize = 25;
+    TextColor = Color3.fromRGB(255,255,255);
+    BgColor = Color3.fromRGB(69,69,69);
+    
+})
+
+e:Button("Ragdoll Engine",function()
+    game.StarterGui:SetCore("SendNotification",{
+    Title = "TNightmareHA A^X";
+    Text = "You must be in the game before executing this Script GUI";
+    Duration = 5;
+})
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/martinelcrac/cryptonichub/main/Ragdollengine.lua'))()
+end)
+
+e:Button("Specter",function()
+    game.StarterGui:SetCore("SendNotification",{
+    Title = "TNightmareHA A^X";
+    Text = "You must be in the game before executing this Script GUI";
+    Duration = 5;
+})
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/DaC9489/DaHub/main/specter"))()
 end)
