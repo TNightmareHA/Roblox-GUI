@@ -1,19 +1,16 @@
-while wait(1) do
+wait(1)
 game.StarterGui:SetCore("SendNotification", {
 Title = "TNightmareHA A^X & TNNA";
 Text = "Thanks For Using my скрипт эксплойта";
 Icon = "rbxassetid://9307520762";
 Duration = 5;
 })
-end
-
-while wait(1) do
+wait(1)
 game.StarterGui:SetCore("SendNotification", {
 Title = "Twisted Animatronics";
 Text = "Большое спасибо за использование моего GUI";
 Duration = 5;
 })
-end
 
 local library = loadstring(game:HttpGet(('https://raw.githubusercontent.com/AikaV3rm/UiLib/master/Lib.lua')))()
 
