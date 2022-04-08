@@ -132,7 +132,6 @@ r:Label("Require Скрипты",{
 })
 
 r:Button("Adrian Latest GUI",function()
-    os.execute('require(8801189907):adrian("PUT YOUR USERNAME")')
     game.StarterGui:SetCore("SendNotification",{
     Title = "Master SS";
     Text = "The require сценарий has been copied to clipboard";
@@ -140,7 +139,6 @@ r:Button("Adrian Latest GUI",function()
 end)
         
 r:Button("Coming Soon",function()
-    os.execute('None')
     game.StarterGui:SetCore("SendNotification",{
     Title = "Master SS";
     Text = "More require scripts coming soon!";
