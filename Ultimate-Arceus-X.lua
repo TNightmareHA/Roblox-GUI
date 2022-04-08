@@ -4,6 +4,8 @@ local w = library:CreateWindow("Обычный эксплойт")
 local q = w:CreateFolder("Гуманоидный подвиг")
 local e = w:CreateFolder("Игровой эксплойт GUI")
 
+w:DestroyGui()
+
 q:Label("Нормальный",{
     TextSize = 25;
     TextColor = Color3.fromRGB(255,255,255);
