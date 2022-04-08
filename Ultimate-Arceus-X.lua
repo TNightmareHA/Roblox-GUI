@@ -137,16 +137,10 @@ d:Label("Require Скрипты",{
     BgColor = Color3.fromRGB(69,69,69);
 })
 
-d:Button("Adrian Latest GUI",function()
-    game.StarterGui:SetCore("SendNotification",{
-    Title = "Master SS";
-    Text = "The require сценарий has been copied to clipboard";
-    Duration = 10;
+d:Button("Coming Soon",function()
+    print("Coming Soon")
 end)
         
 d:Button("Coming Soon",function()
-    game.StarterGui:SetCore("SendNotification",{
-    Title = "Master SS";
-    Text = "More require scripts coming soon!";
-    Duration = 10;
+    print("Coming Soon")
 end)
