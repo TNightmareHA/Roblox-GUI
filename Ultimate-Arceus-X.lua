@@ -4,20 +4,6 @@ local w = library:CreateWindow("Обычный эксплойт")
 local q = w:CreateFolder("Гуманоидный подвиг")
 local e = w:CreateFolder("Игровой эксплойт GUI")
 
-wait(2)
-game.StarterGui:SetCore("SendNotification",{
-Title = "Ultimate A^X GUI";
-    Text = "Сделан TNightmareHA A^X & TNHA";
-    Icon = "rbxassetid://9307520762";
-    Duration = 5;
-})
-
-game.StarterGui:SetCore("SendNotification",{
-    Title = "Alert";
-    Text = "БОЛЬШОЕ СПАСИБО ЗА ПОДДЕРЖКУ МЕНЯ";
-    Duration = 5;
-})
-
 q:Label("Нормальный",{
     TextSize = 25;
     TextColor = Color3.fromRGB(255,255,255);
