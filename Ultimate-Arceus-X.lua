@@ -1,10 +1,11 @@
 local library = loadstring(game:HttpGet(('https://raw.githubusercontent.com/AikaV3rm/UiLib/master/Lib.lua')))()
 
 local w = library:CreateWindow("Обычный эксплойт")
+local GUI = w:CreateFolder("Destroy GUI")
 local q = w:CreateFolder("Гуманоидный подвиг")
 local e = w:CreateFolder("Игровой эксплойт GUI")
 
-w:DestroyGui()
+GUI:DestroyGui()
 
 q:Label("Нормальный",{
     TextSize = 25;
@@ -33,10 +34,9 @@ q:Button("Keyboard UI",function()
 end)
 
 q:Slider("Walkspeed",{
-    default = 16;
     min = 16;
     max = 100;
     precise = true;
 },function(value)
-    print("WTF")
+    game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = tonumber()
 end)
