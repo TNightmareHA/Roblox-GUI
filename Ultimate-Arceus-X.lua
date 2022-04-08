@@ -22,6 +22,14 @@ q:Slider("WalkSpeed",{
     game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = value
 end)
 
+q:Slider("JumpPower",{
+    min = 50;
+    max = 500;
+    precise = true;
+},function(value)
+    game.Players.LocalPlayer.Character.Humanoid.JumpPower = value
+end)
+
 q:Button("IY_FE",function()
     defaultsettings = { prefix = '!'; StayOpen = false; keepIY = true; logsEnabled = false; jLogsEnabled = false; aliases = {}; binds = {}; WayPoints = {}; PluginsTable = {}; } defaults = game:GetService("HttpService"):JSONEncode(defaultsettings) writefile("IY_FE.iy",defaults) loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
 end)
