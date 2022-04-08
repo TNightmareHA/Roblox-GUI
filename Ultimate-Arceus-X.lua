@@ -1,20 +1,23 @@
 local library = loadstring(game:HttpGet(('https://raw.githubusercontent.com/AikaV3rm/UiLib/master/Lib.lua')))()
+
 local w = library:CreateWindow("Обычный эксплойт")
 local Collide = w:CreateFolder("Гуманоидный подвиг")
 local Multiverse = w:CreateFolder("Игровой эксплойт GUI")
+
 local Edition = "Coming Soon"
 
 wait(2)
 game.StarterGui:SetCore("SendNotification",{
 Title = "Ultimate A^X GUI";
-Text = "Сделан TNightmareHA A^X & TNHA";
-Icon = "rbxassetid://9307520762";
-Duration = 5;
+    Text = "Сделан TNightmareHA A^X & TNHA";
+    Icon = "rbxassetid://9307520762";
+    Duration = 5;
 })
 
 game.StarterGui:SetCore("SendNotification",{
-Text = "БОЛЬШОЕ СПАСИБО ЗА ПОДДЕРЖКУ МЕНЯ";
-Duration = 5;
+    Title = "Alert";
+    Text = "БОЛЬШОЕ СПАСИБО ЗА ПОДДЕРЖКУ МЕНЯ";
+    Duration = 5;
 })
 
 Collide:Label("Нормальный",{
