@@ -34,8 +34,7 @@ q:Slider("Walkspeed",{
     default = 16;
     min = 16;
     max = 100;
-    flag = "SPEED"
     precise = true;
 },function(value)
-    game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = tonumber(q:Slider.flags.SPEED)
+    print("WTF")
 end)
