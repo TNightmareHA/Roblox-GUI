@@ -72,6 +72,10 @@ q:Button("Keyboard UI",function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/manimcool21/Keyboard-FE/main/Protected%20(3).lua"))()
 end)
 
+q:Button("Anti-Afk",function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/fiAZekfZ",true))()
+end)
+
 e:Label("Внутриигровые скрипты",{
     TextSize = 25;
     TextColor = Color3.fromRGB(255,255,255);
@@ -95,6 +99,15 @@ e:Button("Specter",function()
     Duration = 5;
 })
     loadstring(game:HttpGet("https://raw.githubusercontent.com/DaC9489/DaHub/main/specter"))()
+end)
+
+e:Button("Lumber Tycoon 2",function()
+    game.StarterGui:SetCore("SendNotification",{
+    Title = "TNightmareHA A^X";
+    Text = "You must be in the game before executing this Script GUI";
+    Duration = 5;
+})
+    loadstring(game:HttpGet("https://pastebin.com/raw/qzsLHpF9"))()
 end)
 
 r:Button("None",function()
