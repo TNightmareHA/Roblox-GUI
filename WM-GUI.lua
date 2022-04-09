@@ -12,7 +12,7 @@ Section1:UpdateSection("Ultimate GUI")
 
 Section1:NewToggle("Auto Click", "Makes the game to Click for you!", function(state)
     if state then
-        game:GetService("ReplicatedStorage").Aero.AeroRemoteServices.SwordService.Swing:FireServer()
+        --[[game:GetService("ReplicatedStorage").Aero.AeroRemoteServices.SwordService.Swing:FireServer()]]print("Boom")
     else
         print("AutoSwing has been turned off")
     end
@@ -20,7 +20,7 @@ end)
 
 Section1:NewToggle("Auto Rebirth", "Makes the game to Auto Rebirth for you!", function(state)
     if state then
-        game.GetService("ReplicatedStorage").Aero.AeroRemoteServices.RebirthService.Rebirth:InvokeServer(unpack(args))
+        --[[game.GetService("ReplicatedStorage").Aero.AeroRemoteServices.RebirthService.Rebirth:InvokeServer(unpack(args))]]print("Boom")
     else
         print("AutoRebirth has been turned off")
     end
@@ -28,7 +28,7 @@ end)
 
 Section1:NewToggle("Auto Prestige", "Makes the game to Auto Prestige for you!", function(state)
     if state then
-        game:GetService("ReplicatedStorage").Aero.AeroRemoteServices.PrestigeService.Prestige:InvokeServer()
+        --[[game:GetService("ReplicatedStorage").Aero.AeroRemoteServices.PrestigeService.Prestige:InvokeServer()]]print("Boom")
     else
         print("AutoPrestige has been turned off")
     end
