@@ -1,7 +1,6 @@
 local library = loadstring(game:HttpGet(("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua")))()
 
-local w = library.CreateLib("Weapon Masters V0.1", "BloodTheme")
-
+local w = library.CreateLib("Weapon Masters V0.1", "DarkTheme")
 local a = w:NewTab("Game")
 local b = a:NewSection("Auto Farm")
 
