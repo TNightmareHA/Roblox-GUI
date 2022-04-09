@@ -30,3 +30,4 @@ b:NewToggle("Auto Prestige", "Makes the game to Auto Prestige for you!", functio
         print("AutoPrestige has been turned off")
     end
 end)
+
