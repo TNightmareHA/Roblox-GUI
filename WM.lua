@@ -52,7 +52,6 @@ end)
 local c = window:Button("VIP Chest", function()
     local args = {
         [1] = "VIP"
-        [2] = true
     }
 
     game.GetService("ReplicatedStorage").Aero.AeroRemoteServices.ChestsService.GetChestTime:InvokeServer(unpack(args))
