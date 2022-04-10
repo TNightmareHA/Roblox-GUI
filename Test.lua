@@ -6,3 +6,10 @@ local Section = Tab:NewSection("Test Section")
 Section:NewButton("ButtonTest", "XXX", function()
     print("Button Clicked")
 end)
+Section:NewToggle("ToggleText", "ToggleInfo", function(state)
+    if state then
+        print("Toggle On")
+    else
+        print("Toggle Off")
+    end
+end)
