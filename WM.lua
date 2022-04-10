@@ -41,7 +41,7 @@ end)
 
 window:Section('Claim Chest')
 
-local c = window:Button("Group Chest", function()
+local c = window:Button("Group", function()
     local args = {
         [1] = "Group"
     }
@@ -49,7 +49,7 @@ local c = window:Button("Group Chest", function()
     game.GetService("ReplicatedStorage").Aero.AeroRemoteServices.ChestsService.GetChestTime:InvokeServer(unpack(args))
 end)
 
-local c = window:Button("VIP Chest", function()
+local c = window:Button("VIP", function()
     local args = {
         [1] = "VIP"
     }
@@ -57,7 +57,7 @@ local c = window:Button("VIP Chest", function()
     game.GetService("ReplicatedStorage").Aero.AeroRemoteServices.ChestsService.GetChestTime:InvokeServer(unpack(args))
 end)
 
-local c = window:Button("Daily Chest", function()
+local c = window:Button("Daily", function()
     local args = {
         [1] = "Daily"
     }
