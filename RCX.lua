@@ -8,8 +8,8 @@ function doClick()
 			game:GetService("ReplicatedStorage").Events.Click3:FireServer()
 			wait()
 		end
-	end)
-end
+	end
+end)
 
 function doReb(RebAmt)
 	spawn(function()
@@ -17,8 +17,8 @@ function doReb(RebAmt)
 			game:GetService("ReplicatedStorage").Events.Rebirth:FireServer(RebAmt)
 			wait()
 		end
-	end)
-end
+	end
+end)
 
 
 
@@ -37,13 +37,13 @@ end)
 local stRebirth;
 t:CreateTextbox("Amount", function(value)
 	stRebirth = value;
-	print(value)
+	print(value);
  end)
 t:CreateToggle("Auto Rebirth", function(bool)
 		getgenv().Rebirth = bool
 	if bool then
 		doReb(stRebirth);
-		print("Working")
+		print("Working");
 	end
 end)
 
