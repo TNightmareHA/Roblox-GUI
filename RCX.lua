@@ -37,11 +37,13 @@ end)
 local stRebirth;
 t:CreateTextbox("Amount", function(value)
 	stRebirth = value;
+	print(value)
  end)
 t:CreateToggle("Auto Rebirth", function(bool)
 		getgenv().Rebirth = bool
 	if bool then
 		doReb(stRebirth);
+		print("Working")
 	end
 end)
 
