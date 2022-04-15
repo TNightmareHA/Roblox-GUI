@@ -11,10 +11,10 @@ function doClick()
 	end)
 end
 
-function doReb(selectreb)
+function doReb(rebamt)
 	spawn(function()
 		while getgenv().Rebirth == true do
-			game:GetService("ReplicatedStorage").Events.Rebirth:FireServer(selectreb)
+			game:GetService("ReplicatedStorage").Events.Rebirth:FireServer(rebamt)
 			wait()
 		end
 	end)
@@ -35,7 +35,10 @@ t:CreateToggle("Auto Click", function(bool)
 end)
 
 local selectreb;
-t:CreateDropdown("Rebirth Amount", {"1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24"}, 5, function(value)
+--[[t:CreateDropdown("Rebirth Amount", {"1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24"}, 5, function(value)
+	selectreb = value;
+ end)]]
+t:CreateTextbox("Rebirth Amount", function(value)
 	selectreb = value;
  end)
 t:CreateToggle("Auto Rebirth", function(bool)
