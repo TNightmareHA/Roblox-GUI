@@ -128,7 +128,10 @@ so:Label("Rebirth Toggle",{
 local selectreb;
 so:Box("Rebirth Amount","number",function(value)
 	selectreb = value;
- end)
+end)
+--[[so:Dropdown("Dropdown",{"1","5","10","15","20","21","22","23","24","25","30"},true,function(value)
+	selectreb = value;
+ end)]]
 so:Toggle("Auto Rebirth",function(bool)
 	getgenv().Rebirth = bool
 	if bool then
