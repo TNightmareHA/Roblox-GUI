@@ -30,17 +30,14 @@ local b = w:NewSection("Main")
 local e = w:NewSection("Mix")
 local Worlds = "WorldWar1";
 
-b:CreateToggle(
-    "Auto-Melee ",
-    function(bool)
+b:CreateToggle("Auto-Melee ", function(bool)
         shared.toggle = bool
-        AutoMelee = bool
-    end
-)
+        AutoMelee = bool;
+end)
 
 b:CreateToggle("Auto-Farm", function(bool)
 	shared.toggle = bool
-	AutoFarm = bool
+	AutoFarm = bool;
 end)
 
 b:CreateDropdown("World", {"Tribal", "Medieval", "Colonial", "WorldWar1", "OilWars", "WorldWar2", "Modern", "Future", "Western", "Ancient"}, true, function(World)
