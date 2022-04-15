@@ -34,16 +34,14 @@ t:CreateToggle("Auto Click", function(bool)
 	end
 end)
 
-local RebAmt;
-t:CreateTextbox("RebAmt", function(value)
-	RebAmt = value;
-	print(value)
+local selectreb;
+t:CreateDropdown("Rebirth Amount", {"1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24"}, 2, function(value)
+	selectreb = value;
  end)
 t:CreateToggle("Auto Rebirth", function(bool)
 		getgenv().Rebirth = bool
 	if bool then
-		doReb(RebAmt);
-		print("Working")
+		doReb(selectreb);
 	end
 end)
 
