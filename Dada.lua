@@ -22,7 +22,7 @@ end]]
 
 
 
-local lib = loadstring(game:HttpGet("https://raw.githubusercontent.com/TNightmareHA/Backup/main/Wall.lua"))()
+local lib = loadstring(game:HttpGet("https://raw.githubusercontent.com/TNightmareHA/Backup/main/W.lua"))()
 
 local w = lib:NewWindow("War Simulator V1")
 local b = w:NewSection("Main")
