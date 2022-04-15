@@ -35,9 +35,9 @@ t:CreateToggle("Auto Click", function(bool)
 end)
 
 local stRebirth;
-t:CreateTextbox("RebAmt", function(value)
-	stRebirth = value;
-	print(value)
+t:CreateTextbox("RebAmt", function(text)
+	stRebirth = text;
+	print(text)
  end)
 t:CreateToggle("Auto Rebirth", function(bool)
 		getgenv().Rebirth = bool
