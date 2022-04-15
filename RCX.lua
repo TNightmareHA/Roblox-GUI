@@ -34,15 +34,15 @@ t:CreateToggle("Auto Click", function(bool)
 	end
 end)
 
-local stRebirth;
-t:CreateTextbox("RebAmt", function(text)
-	stRebirth = text;
-	print(text)
+local RebAmt;
+t:CreateTextbox("RebAmt", function(value)
+	RebAmt = value;
+	print(value)
  end)
 t:CreateToggle("Auto Rebirth", function(bool)
 		getgenv().Rebirth = bool
 	if bool then
-		doReb(stRebirth);
+		doReb(RebAmt);
 		print("Working")
 	end
 end)
