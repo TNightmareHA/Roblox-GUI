@@ -1,4 +1,3 @@
-Code:
 -- Global Variables
 getgenv().AutoClick = false
 getgenv().OpenEgg = false
