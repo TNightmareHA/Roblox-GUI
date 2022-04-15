@@ -25,14 +25,12 @@ end]]
 local lib = loadstring(game:HttpGet("https://raw.githubusercontent.com/TNightmareHA/Backup/main/Wall.lua"))()
 
 local w = lib:NewWindow("War Simulator V1")
-
 local b = w:NewSection("Main")
-local e = w:NewSection("Mix")
-local Worlds = "WorldWar1";
+local Worlds = "WorldWar1"
 
 b:CreateToggle("Auto-Melee ", function(bool)
-        shared.toggle = bool
-        AutoMelee = bool;
+   shared.toggle = bool
+   AutoMelee = bool;
 end)
 
 b:CreateToggle("Auto-Farm", function(bool)
@@ -40,13 +38,8 @@ b:CreateToggle("Auto-Farm", function(bool)
 	AutoFarm = bool;
 end)
 
-b:CreateDropdown("World", {"Tribal", "Medieval", "Colonial", "WorldWar1", "OilWars", "WorldWar2", "Modern", "Future", "Western", "Ancient"}, true, function(World)
+b:CreateDropdown("World", {"Tribal", "Medieval", "Colonial", "WorldWar1", "OilWars", "WorldWar2", "Modern", "Future", "Western", "Ancient"}, 2, function(World)
 	Worlds = World;
-end)
-
-e:CreateToggle("AntiAfk", function(bool)
-	shared.toggle = bool
-	AntiAfk = bool
 end)
 
 
@@ -100,3 +93,10 @@ game:GetService("RunService").Stepped:connect(
         end
     end
 )
+
+local e = w:NewSection("Mix")
+
+e:CreateToggle("AntiAfk", function(bool)
+	shared.toggle = bool
+	AntiAfk = bool
+end)
