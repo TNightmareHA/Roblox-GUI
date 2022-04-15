@@ -28,7 +28,7 @@ local w = lib:NewWindow("War Simulator V1")
 
 local b = w:NewSection("Main")
 local e = w:NewSection("Mix")
-local Worlds = "WorldWar1"
+local Worlds = "WorldWar1";
 
 b:CreateToggle(
     "Auto-Melee ",
@@ -44,7 +44,7 @@ b:CreateToggle("Auto-Farm", function(bool)
 end)
 
 b:CreateDropdown("World", {"Tribal", "Medieval", "Colonial", "WorldWar1", "OilWars", "WorldWar2", "Modern", "Future", "Western", "Ancient"}, true, function(World)
-	Worlds = World
+	Worlds = World;
 end)
 
 e:CreateToggle("AntiAfk", function(bool)
