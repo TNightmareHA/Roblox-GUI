@@ -60,3 +60,8 @@ end
 
 -- load
 venyx:SelectPage(venyx.pages[1], true)
+
+local gui = game:GetService("CoreGui").Venyx
+local frame = gui:FindFirstChild("Main")
+frame.Active = true
+frame.Draggable = true
