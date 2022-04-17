@@ -1,5 +1,5 @@
 local lib = loadstring(game:HttpGet("https://raw.githubusercontent.com/GreenDeno/Venyx-UI-Library/main/source.lua"))()
-local w = lib.new("Specter Hub", 5013109572)
+local w = lib.new("Specter Hub", )
 
 local themes = {
 Background = Color3.fromRGB(24, 24, 24),
@@ -21,7 +21,7 @@ s:addButton("Luxury Home", "Coming Soon" function(text)
     w:Notify("Map", text)
 end)
 
-w:SelectPage(venyx.pages[1], true)
+w:SelectPage(w.pages[1], true)
 
 local gui = game:GetService("CoreGui").Venyx
 local frame = gui:FindFirstChild("Main")
