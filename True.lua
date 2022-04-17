@@ -61,4 +61,4 @@ end
 -- load
 venyx:SelectPage(venyx.pages[1], true)
 
-Frame.Draggable = true
+ScreenGui.Frame.Draggable = true
