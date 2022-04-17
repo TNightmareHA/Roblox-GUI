@@ -61,7 +61,5 @@ end
 -- load
 venyx:SelectPage(venyx.pages[1], true)
 
-local gui = game:GetService("Players").LocalPlayer.PlayerGui.ScreenGui -screenguis directory here
-local frame = gui:FindFirstChild("Frame") --frame's name here
-library.frame.Active = true
-library.frame.Draggable = true
+library.Active = true
+library.Draggable = true
