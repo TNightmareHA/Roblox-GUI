@@ -21,18 +21,7 @@ s:addButton("Luxury Home", "Coming Soon" function(text)
     w:Notify("Map", text)
 end)
 
--- second page
-local theme = venyx:addPage("Theme", 5012544693)
-local colors = theme:addSection("Colors")
-
-for theme, color in pairs(themes) do -- all in one theme changer, i know, im cool
-colors:addColorPicker(theme, color, function(color3)
-venyx:setTheme(theme, color3)
-end)
-end
-
--- load
-venyx:SelectPage(venyx.pages[1], true)
+w:SelectPage(venyx.pages[1], true)
 
 local gui = game:GetService("CoreGui").Venyx
 local frame = gui:FindFirstChild("Main")
