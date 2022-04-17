@@ -1,4 +1,4 @@
-local lib = loadstring(game:HttpGet("https://raw.githubusercontent.com/TNightmareHA/Backup/main/Source.lua"))()
+local lib = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
 
 local w = lib.CreateLib("Specter Hub", "Synapse")
 local t = w:NewTab("Maps")
